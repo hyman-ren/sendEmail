@@ -1,2 +1,2 @@
 # sendEmail
-sendEmail，解决中午乱码问题
+sendEmail，解决中文标题和附件乱码问题
