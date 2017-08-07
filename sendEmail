@@ -874,7 +874,7 @@ sub send_attachment {
     
     @fields = split(/\./, $filename_name);
     $encoding = $fields[$#fields];
-    $filename_name = "=?UTF-8?B?".base64_encode($subject)."?=";
+    $filename_name = "=?UTF-8?B?".base64_encode($filename_name)."?=";
     
     if ($encoding =~ /txt|text|log|conf|^c$|cpp|^h$|inc|m3u/i) {   $content_type = 'text/plain';                      }
     elsif ($encoding =~ /html|htm|shtml|shtm|asp|php|cfm/i) {      $content_type = 'text/html';                       }
